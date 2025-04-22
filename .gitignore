@@ -1,0 +1,15 @@
+# Node dependencies
+node_modules/
+
+# Environment variables (if you add any later)
+.env
+
+# Log files
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Optional: Don't commit results data to Git
+# results.csv
