@@ -1,0 +1,358 @@
+:root {
+    --primary-color: #0057b8; /* A nice blue */
+    --secondary-color: #ffd700; /* A contrasting gold/yellow */
+    --light-gray: #f8f9fa;
+    --medium-gray: #dee2e6;
+    --dark-gray: #495057;
+    --text-color: #212529;
+    --white: #ffffff;
+    --danger-color: #dc3545;
+    --success-color: #28a745;
+    --warning-color: #ffc107; /* For skipped */
+    --warning-border-color: #f0ad4e;
+    --warning-bg-color: #fff8e1;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+    color: var(--text-color);
+    background-color: var(--light-gray); /* Lighter background */
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    overflow: hidden; /* Contain shadows and borders */
+}
+
+header {
+    background: linear-gradient(135deg, var(--primary-color), #003d82);
+    color: var(--white);
+    padding: 30px 40px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+header p {
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+form {
+    padding: 10px 40px 30px 40px; /* More padding at bottom */
+}
+
+.card {
+    background-color: var(--white);
+    border: 1px solid var(--medium-gray);
+    border-radius: var(--border-radius);
+    padding: 25px;
+    margin-bottom: 30px;
+     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.user-info h2, .questions-container h2, #results h2 {
+    font-size: 1.4em;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--primary-color);
+    display: inline-block;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.form-group label {
+    font-weight: 400;
+    color: var(--dark-gray);
+    width: 100px; /* Adjust as needed */
+    text-align: right;
+    flex-shrink: 0;
+}
+
+.form-group input[type="text"] {
+    flex-grow: 1;
+    padding: 12px 15px;
+    border: 1px solid var(--medium-gray);
+    border-radius: 4px;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input[type="text"]:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(0, 87, 184, 0.2);
+}
+
+.question-block {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed var(--medium-gray);
+    transition: opacity 0.3s ease, background-color 0.3s ease; /* Smooth transition for skipped state */
+}
+
+.question-block:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align text top, button top */
+    margin-bottom: 15px; /* Keep space before options */
+    gap: 15px; /* Add gap between text and button */
+}
+
+.question-header p {
+     margin-bottom: 0; /* Remove default paragraph margin */
+     flex-grow: 1; /* Allow text to take available space */
+     /* margin-right: 15px; /* Space between text and skip button (replaced by gap) */
+}
+
+.q-num {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-right: 8px;
+}
+
+.skip-button {
+    background-color: var(--medium-gray);
+    color: var(--dark-gray);
+    border: 1px solid #bbb; /* Slightly darker border */
+    padding: 5px 12px;
+    font-size: 0.85em;
+    font-weight: 400; /* Lighter than submit */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    flex-shrink: 0; /* Prevent button from shrinking */
+    align-self: center; /* Vertically center button with text line */
+}
+
+.skip-button:hover {
+    background-color: var(--dark-gray);
+    color: var(--white);
+    border-color: var(--dark-gray);
+}
+
+
+.options label {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border: 1px solid var(--medium-gray);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    position: relative; /* For potential custom radio */
+    font-weight: 300;
+}
+
+.options label:hover {
+    background-color: #eef5ff; /* Light blue hover */
+    border-color: #a8c7fa; /* Use 'fa' for light blue border */
+}
+
+.options input[type="radio"] {
+   margin-right: 10px;
+   vertical-align: middle;
+   /* appearance: none; Optional: hide default radio for custom styling */
+}
+
+
+/* Style for selected radio button's label */
+/* Using :has() might not be fully supported in older browsers */
+.options label:has(input[type="radio"]:checked) {
+     background-color: var(--primary-color);
+     color: var(--white);
+     border-color: var(--primary-color);
+     font-weight: 400; /* Slightly bolder when selected */
+}
+/* Re-apply hover style for non-checked labels */
+.options label:has(input[type="radio"]:not(:checked):hover) {
+    background-color: #eef5ff;
+    border-color: #a8c7fa;
+}
+/* Fallback/Alternative if :has is not supported: */
+/* .options input[type="radio"]:checked + label { ... } - requires label *after* input */
+
+
+/* Style for skipped questions */
+.question-block.skipped {
+    opacity: 0.7; /* Visually fade skipped questions */
+    background-color: var(--warning-bg-color); /* A light orange/beige tint */
+    border-left: 4px solid var(--warning-border-color); /* Orange border */
+    padding-left: 15px; /* Indent content slightly */
+    /* margin-left: -19px; /* Counteract padding for alignment - Adjust if needed based on parent padding*/
+    border-radius: 4px; /* Optional: round the corners */
+    padding-top: 10px; /* Add some top padding when skipped */
+    padding-bottom: 10px; /* Adjust bottom padding */
+}
+
+.question-block.skipped .skip-button {
+    background-color: var(--warning-color);
+    color: var(--text-color);
+    border-color: var(--warning-border-color);
+}
+.question-block.skipped .skip-button:hover {
+    background-color: var(--warning-border-color); /* Darker yellow/orange */
+}
+
+
+.submission-area {
+    text-align: center;
+    margin-top: 30px;
+}
+
+button[type="submit"] {
+    background-color: var(--success-color);
+    color: var(--white);
+    border: none;
+    padding: 15px 35px;
+    font-size: 1.1em;
+    font-weight: 600;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"]:hover {
+    background-color: #218838; /* Darker green */
+    transform: translateY(-2px);
+}
+
+button[type="submit"]:active {
+     transform: translateY(0);
+}
+
+button[type="submit"]:disabled {
+    background-color: var(--medium-gray);
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+
+#results {
+    margin: 30px 40px; /* Match form padding */
+}
+
+#results-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+#results-content li {
+    margin-bottom: 12px;
+    padding: 10px 15px; /* Increased padding */
+    border-radius: 4px;
+    border: 1px solid transparent; /* Base border */
+    border-left-width: 4px; /* Keep left border thicker */
+}
+
+#results-content li.correct {
+    background-color: #e9f7ec;
+    border-color: var(--success-color);
+}
+
+#results-content li.incorrect {
+     background-color: #fdeded;
+     border-color: var(--danger-color);
+}
+
+#results-content li.skipped {
+    background-color: var(--warning-bg-color); /* Light yellow for skipped in results */
+    border-color: var(--warning-border-color); /* Lighter orange border */
+    color: #6d4c41; /* Brownish text */
+}
+
+#results-content li.unanswered {
+    background-color: #f8f9fa; /* Light grey for unanswered */
+    border-color: var(--medium-gray);
+    color: var(--dark-gray);
+}
+
+
+#results-content h3 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+#results-content p { /* Style for the summary counts */
+    margin-top: 15px;
+    font-size: 0.95em;
+    color: var(--dark-gray);
+}
+
+
+.status-message {
+    margin-top: 15px;
+    font-weight: 600;
+    padding: 8px;
+    border-radius: 4px;
+    text-align: center;
+}
+.status-success { color: var(--success-color); background-color: #e9f7ec; }
+.status-error { color: var(--danger-color); background-color: #fdeded; }
+.status-pending { color: var(--dark-gray); background-color: #e9ecef; }
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body { padding: 10px; }
+    .container { margin: 15px auto; }
+    header { padding: 20px; }
+    form { padding: 10px 20px 20px 20px; }
+    .card { padding: 20px; }
+    .form-group { flex-direction: column; align-items: flex-start; gap: 5px; }
+    .form-group label { width: auto; text-align: left; margin-bottom: 3px; }
+    .form-group input[type="text"] { width: 100%; }
+     #results { margin: 20px; }
+}
+
+@media (max-width: 480px) {
+    header h1 { font-size: 1.8em; }
+    .user-info h2, .questions-container h2, #results h2 { font-size: 1.2em; }
+    .options label { padding: 8px 12px; }
+    button[type="submit"] { padding: 12px 25px; font-size: 1em; }
+
+     .question-header {
+        /* Consider stacking text and button if needed */
+        /* flex-direction: column; */
+        /* align-items: flex-start; */
+    }
+     .skip-button {
+        /* Adjust padding/margin if stacking */
+         /* margin-top: 5px; */
+         padding: 4px 8px;
+         font-size: 0.8em;
+    }
+}

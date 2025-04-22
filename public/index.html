@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Test - Wimbledon Language Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Placement Test</h1>
+            <p>Wimbledon Language Academy</p>
+        </header>
+
+        <form id="placementTestForm">
+             <div class="user-info card">
+                <h2>Participant Information</h2>
+                <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required> <!-- Keep required here -->
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required> <!-- Keep required here -->
+                </div>
+            </div>
+
+            <div class="questions-container card">
+                <h2>Questions</h2>
+
+                <!-- ========= Questions Start Here ========= -->
+
+                <div class="question-block" data-question-num="1">
+                    <div class="question-header">
+                         <p><strong class="q-num">1.</strong> She usually ________ to work by bus.</p>
+                         <button type="button" class="skip-button" data-question-name="q1">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q1" value="a"> a) go</label>
+                        <label><input type="radio" name="q1" value="b"> b) goes</label>
+                        <label><input type="radio" name="q1" value="c"> c) going</label>
+                        <label><input type="radio" name="q1" value="d"> d) went</label>
+                    </div>
+                </div>
+
+                 <div class="question-block" data-question-num="2">
+                     <div class="question-header">
+                         <p><strong class="q-num">2.</strong> I ________ watch TV in the evening.</p>
+                         <button type="button" class="skip-button" data-question-name="q2">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q2" value="a"> a) always</label>
+                        <label><input type="radio" name="q2" value="b"> b) went</label>
+                        <label><input type="radio" name="q2" value="c"> c) tomorrow</label>
+                        <label><input type="radio" name="q2" value="d"> d) yesterday</label>
+                    </div>
+                </div>
+
+                <div class="question-block" data-question-num="3">
+                     <div class="question-header">
+                         <p><strong class="q-num">3.</strong> She ________ speak Spanish.</p>
+                         <button type="button" class="skip-button" data-question-name="q3">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q3" value="a"> a) love</label>
+                        <label><input type="radio" name="q3" value="b"> b) can't</label>
+                        <label><input type="radio" name="q3" value="c"> c) try</label>
+                        <label><input type="radio" name="q3" value="d"> d) practice</label>
+                    </div>
+                </div>
+
+                <div class="question-block" data-question-num="4">
+                     <div class="question-header">
+                         <p><strong class="q-num">4.</strong> They ________ to the cinema last night.</p>
+                         <button type="button" class="skip-button" data-question-name="q4">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q4" value="a"> a) go</label>
+                        <label><input type="radio" name="q4" value="b"> b) goes</label>
+                        <label><input type="radio" name="q4" value="c"> c) went</label>
+                        <label><input type="radio" name="q4" value="d"> d) going</label>
+                    </div>
+                </div>
+
+                <div class="question-block" data-question-num="5">
+                     <div class="question-header">
+                         <p><strong class="q-num">5.</strong> He ________ his homework right now.</p>
+                         <button type="button" class="skip-button" data-question-name="q5">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q5" value="a"> a) doing</label>
+                        <label><input type="radio" name="q5" value="b"> b) do</label>
+                        <label><input type="radio" name="q5" value="c"> c) does</label>
+                        <label><input type="radio" name="q5" value="d"> d) is doing</label>
+                    </div>
+                </div>
+
+                <div class="question-block" data-question-num="6">
+                    <div class="question-header">
+                         <p><strong class="q-num">6.</strong> We are ________ to the beach tomorrow.</p>
+                          <button type="button" class="skip-button" data-question-name="q6">Skip</button>
+                    </div>
+                     <div class="options">
+                         <label><input type="radio" name="q6" value="a"> a) go</label>
+                         <label><input type="radio" name="q6" value="b"> b) goes</label>
+                         <label><input type="radio" name="q6" value="c"> c) are going</label>
+                         <label><input type="radio" name="q6" value="d"> d) going</label>
+                    </div>
+                </div>
+
+                <div class="question-block" data-question-num="7">
+                    <div class="question-header">
+                         <p><strong class="q-num">7.</strong> I ________ eat vegetables.</p>
+                         <button type="button" class="skip-button" data-question-name="q7">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q7" value="a"> a) always</label>
+                        <label><input type="radio" name="q7" value="b"> b) fast</label>
+                        <label><input type="radio" name="q7" value="c"> c) last week</label>
+                        <label><input type="radio" name="q7" value="d"> d) quickly</label>
+                    </div>
+                </div>
+
+                <div class="question-block" data-question-num="8">
+                     <div class="question-header">
+                         <p><strong class="q-num">8.</strong> There are ________ apples on the table.</p>
+                         <button type="button" class="skip-button" data-question-name="q8">Skip</button>
+                    </div>
+                     <div class="options">
+                         <label><input type="radio" name="q8" value="a"> a) much</label>
+                         <label><input type="radio" name="q8" value="b"> b) very</label>
+                         <label><input type="radio" name="q8" value="c"> c) a lot</label>
+                         <label><input type="radio" name="q8" value="d"> d) some</label>
+                     </div>
+                </div>
+
+                <div class="question-block" data-question-num="9">
+                     <div class="question-header">
+                         <p><strong class="q-num">9.</strong> Alternative word for: “dangerous”</p>
+                         <button type="button" class="skip-button" data-question-name="q9">Skip</button>
+                    </div>
+                     <div class="options">
+                         <label><input type="radio" name="q9" value="a"> a) risky</label>
+                         <label><input type="radio" name="q9" value="b"> b) difficult</label>
+                         <label><input type="radio" name="q9" value="c"> c) safe</label>
+                         <label><input type="radio" name="q9" value="d"> d) comfortable</label>
+                     </div>
+                </div>
+
+                <div class="question-block" data-question-num="10">
+                     <div class="question-header">
+                         <p><strong class="q-num">10.</strong> Gizem: Is there any sugar in the jar? <br> Cem: ........ (-)</p>
+                         <button type="button" class="skip-button" data-question-name="q10">Skip</button>
+                    </div>
+                     <div class="options">
+                         <label><input type="radio" name="q10" value="a"> a) much</label>
+                         <label><input type="radio" name="q10" value="b"> b) many</label>
+                         <label><input type="radio" name="q10" value="c"> c) a lot</label>
+                         <label><input type="radio" name="q10" value="d"> d) none</label>
+                     </div>
+                </div>
+
+                <div class="question-block" data-question-num="11">
+                    <div class="question-header">
+                         <p><strong class="q-num">11.</strong> Alternative word for: "baby cat"</p>
+                         <button type="button" class="skip-button" data-question-name="q11">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q11" value="a"> a) kitten</label>
+                        <label><input type="radio" name="q11" value="b"> b) puppy</label>
+                        <label><input type="radio" name="q11" value="c"> c) lion</label>
+                        <label><input type="radio" name="q11" value="d"> d) calf</label>
+                    </div>
+                </div>
+
+                <div class="question-block" data-question-num="12">
+                     <div class="question-header">
+                         <p><strong class="q-num">12.</strong> Which of the following animals can fly?</p>
+                         <button type="button" class="skip-button" data-question-name="q12">Skip</button>
+                    </div>
+                     <div class="options">
+                         <label><input type="radio" name="q12" value="a"> a) dog</label>
+                         <label><input type="radio" name="q12" value="b"> b) cat</label>
+                         <label><input type="radio" name="q12" value="c"> c) bird</label>
+                         <label><input type="radio" name="q12" value="d"> d) fish</label>
+                     </div>
+                </div>
+
+                <div class="question-block" data-question-num="13">
+                     <div class="question-header">
+                         <p><strong class="q-num">13.</strong> Which one travels in the sea?</p>
+                         <button type="button" class="skip-button" data-question-name="q13">Skip</button>
+                    </div>
+                     <div class="options">
+                         <label><input type="radio" name="q13" value="a"> a) car</label>
+                         <label><input type="radio" name="q13" value="b"> b) boat</label>
+                         <label><input type="radio" name="q13" value="c"> c) airplane</label>
+                         <label><input type="radio" name="q13" value="d"> d) train</label>
+                     </div>
+                </div>
+
+                <div class="question-block" data-question-num="14">
+                     <div class="question-header">
+                         <p><strong class="q-num">14.</strong> Can you pass me the ________? I want to slice some bread.</p>
+                         <button type="button" class="skip-button" data-question-name="q14">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q14" value="a"> a) fork</label>
+                        <label><input type="radio" name="q14" value="b"> b) spoon</label>
+                        <label><input type="radio" name="q14" value="c"> c) knife</label>
+                        <label><input type="radio" name="q14" value="d"> d) ladle</label>
+                    </div>
+                </div>
+
+                <div class="question-block" data-question-num="15">
+                     <div class="question-header">
+                         <p><strong class="q-num">15.</strong> Let's meet ________ 7 o'clock.</p>
+                         <button type="button" class="skip-button" data-question-name="q15">Skip</button>
+                    </div>
+                     <div class="options">
+                         <label><input type="radio" name="q15" value="a"> a) on</label>
+                         <label><input type="radio" name="q15" value="b"> b) in</label>
+                         <label><input type="radio" name="q15" value="c"> c) at</label>
+                         <label><input type="radio" name="q15" value="d"> d) under</label>
+                     </div>
+                </div>
+
+                <div class="question-block" data-question-num="16">
+                     <div class="question-header">
+                         <p><strong class="q-num">16.</strong> I will see you ________ Monday.</p>
+                         <button type="button" class="skip-button" data-question-name="q16">Skip</button>
+                    </div>
+                     <div class="options">
+                         <label><input type="radio" name="q16" value="a"> a) on</label>
+                         <label><input type="radio" name="q16" value="b"> b) in</label>
+                         <label><input type="radio" name="q16" value="c"> c) at</label>
+                         <label><input type="radio" name="q16" value="d"> d) above</label>
+                     </div>
+                </div>
+
+                <div class="question-block" data-question-num="17">
+                     <div class="question-header">
+                         <p><strong class="q-num">17.</strong> Opposite word for: “slow”</p>
+                         <button type="button" class="skip-button" data-question-name="q17">Skip</button>
+                    </div>
+                     <div class="options">
+                         <label><input type="radio" name="q17" value="a"> a) dangerous</label>
+                         <label><input type="radio" name="q17" value="b"> b) cool</label>
+                         <label><input type="radio" name="q17" value="c"> c) fast</label>
+                         <label><input type="radio" name="q17" value="d"> d) pretty</label>
+                     </div>
+                </div>
+
+                <div class="question-block" data-question-num="18">
+                     <div class="question-header">
+                         <p><strong class="q-num">18.</strong> What is your ________ name?</p>
+                         <button type="button" class="skip-button" data-question-name="q18">Skip</button>
+                    </div>
+                     <div class="options">
+                         <label><input type="radio" name="q18" value="a"> a) sister's</label>
+                         <label><input type="radio" name="q18" value="b"> b) sisters'</label>
+                         <label><input type="radio" name="q18" value="c"> c) sister</label>
+                         <label><input type="radio" name="q18" value="d"> d) sisters</label>
+                     </div>
+                </div>
+
+                <div class="question-block" data-question-num="19">
+                     <div class="question-header">
+                         <p><strong class="q-num">19.</strong> She ________ as a teacher, but today she is ________ for her exam.</p>
+                         <button type="button" class="skip-button" data-question-name="q19">Skip</button>
+                    </div>
+                     <div class="options">
+                         <label><input type="radio" name="q19" value="a"> a) work / study</label>
+                         <label><input type="radio" name="q19" value="b"> b) works / is studying</label>
+                         <label><input type="radio" name="q19" value="c"> c) works / study</label>
+                         <label><input type="radio" name="q19" value="d"> d) work / studying</label>
+                     </div>
+                </div>
+
+                <div class="question-block" data-question-num="20">
+                     <div class="question-header">
+                         <p><strong class="q-num">20.</strong> She ________ her keys yesterday.</p>
+                         <button type="button" class="skip-button" data-question-name="q20">Skip</button>
+                    </div>
+                     <div class="options">
+                         <label><input type="radio" name="q20" value="a"> a) find</label>
+                         <label><input type="radio" name="q20" value="b"> b) found</label>
+                         <label><input type="radio" name="q20" value="c"> c) finds</label>
+                         <label><input type="radio" name="q20" value="d"> d) have found</label>
+                     </div>
+                </div>
+
+                <div class="question-block" data-question-num="21">
+                     <div class="question-header">
+                         <p><strong class="q-num">21.</strong> Whose ________ is this?</p>
+                         <button type="button" class="skip-button" data-question-name="q21">Skip</button>
+                    </div>
+                     <div class="options">
+                         <label><input type="radio" name="q21" value="a"> a) book</label>
+                         <label><input type="radio" name="q21" value="b"> b) books</label>
+                         <label><input type="radio" name="q21" value="c"> c) book's</label>
+                         <label><input type="radio" name="q21" value="d"> d) books'</label>
+                     </div>
+                </div>
+
+                <div class="question-block" data-question-num="22">
+                     <div class="question-header">
+                         <p><strong class="q-num">22.</strong> You should stop ________ me while I am talking.</p>
+                         <button type="button" class="skip-button" data-question-name="q22">Skip</button>
+                    </div>
+                     <div class="options">
+                         <label><input type="radio" name="q22" value="a"> a) gossiping</label>
+                         <label><input type="radio" name="q22" value="b"> b) talking</label>
+                         <label><input type="radio" name="q22" value="c"> c) interrupting</label>
+                         <label><input type="radio" name="q22" value="d"> d) telling</label>
+                     </div>
+                </div>
+
+                <div class="question-block" data-question-num="23">
+                     <div class="question-header">
+                         <p><strong class="q-num">23.</strong> I don't want to be a shop assistant because I can't stand ________ customers.</p>
+                         <button type="button" class="skip-button" data-question-name="q23">Skip</button>
+                    </div>
+                     <div class="options">
+                         <label><input type="radio" name="q23" value="a"> a) dealing with</label>
+                         <label><input type="radio" name="q23" value="b"> b) working</label>
+                         <label><input type="radio" name="q23" value="c"> c) listening</label>
+                         <label><input type="radio" name="q23" value="d"> d) solving</label>
+                     </div>
+                </div>
+
+                <div class="question-block" data-question-num="24">
+                     <div class="question-header">
+                         <p><strong class="q-num">24.</strong> I have bought the tickets for the concert so we ________ see One Direction tomorrow.</p>
+                         <button type="button" class="skip-button" data-question-name="q24">Skip</button>
+                    </div>
+                     <div class="options">
+                         <label><input type="radio" name="q24" value="a"> a) are going to</label>
+                         <label><input type="radio" name="q24" value="b"> b) will</label>
+                         <label><input type="radio" name="q24" value="c"> c) might</label>
+                         <label><input type="radio" name="q24" value="d"> d) may</label>
+                     </div>
+                </div>
+
+                <div class="question-block" data-question-num="25">
+                     <div class="question-header">
+                         <p><strong class="q-num">25.</strong> Alternative word for: "hate"?</p>
+                         <button type="button" class="skip-button" data-question-name="q25">Skip</button>
+                    </div>
+                     <div class="options">
+                         <label><input type="radio" name="q25" value="a"> a) Don't mind</label>
+                         <label><input type="radio" name="q25" value="b"> b) Can't stand</label>
+                         <label><input type="radio" name="q25" value="c"> c) Keen on</label>
+                         <label><input type="radio" name="q25" value="d"> d) Dislike</label>
+                     </div>
+                </div>
+
+                <div class="question-block" data-question-num="26">
+                     <div class="question-header">
+                         <p><strong class="q-num">26.</strong> Opposite word for: “tired"</p>
+                         <button type="button" class="skip-button" data-question-name="q26">Skip</button>
+                    </div>
+                     <div class="options">
+                         <label><input type="radio" name="q26" value="a"> a) Happy</label>
+                         <label><input type="radio" name="q26" value="b"> b) Sleepy</label>
+                         <label><input type="radio" name="q26" value="c"> c) Fit</label>
+                         <label><input type="radio" name="q26" value="d"> d) Rested</label>
+                     </div>
+                </div>
+
+                <div class="question-block" data-question-num="27">
+                     <div class="question-header">
+                         <p><strong class="q-num">27.</strong> She enjoys ________ books in her free time.</p>
+                         <button type="button" class="skip-button" data-question-name="q27">Skip</button>
+                    </div>
+                     <div class="options">
+                         <label><input type="radio" name="q27" value="a"> a) read</label>
+                         <label><input type="radio" name="q27" value="b"> b) reading</label>
+                         <label><input type="radio" name="q27" value="c"> c) to read</label>
+                         <label><input type="radio" name="q27" value="d"> d) being read</label>
+                     </div>
+                </div>
+
+                <div class="question-block" data-question-num="28">
+                     <div class="question-header">
+                         <p><strong class="q-num">28.</strong> I avoid ________ spicy food.</p>
+                         <button type="button" class="skip-button" data-question-name="q28">Skip</button>
+                    </div>
+                     <div class="options">
+                         <label><input type="radio" name="q28" value="a"> a) eat</label>
+                         <label><input type="radio" name="q28" value="b"> b) eating</label>
+                         <label><input type="radio" name="q28" value="c"> c) to eat</label>
+                         <label><input type="radio" name="q28" value="d"> d) to be eaten</label>
+                     </div>
+                </div>
+
+                <div class="question-block" data-question-num="29">
+                     <div class="question-header">
+                         <p><strong class="q-num">29.</strong> I saw a small cat on the street while I ________ home.</p>
+                         <button type="button" class="skip-button" data-question-name="q29">Skip</button>
+                    </div>
+                     <div class="options">
+                         <label><input type="radio" name="q29" value="a"> a) Was walking</label>
+                         <label><input type="radio" name="q29" value="b"> b) Walked</label>
+                         <label><input type="radio" name="q29" value="c"> c) Am walking</label>
+                         <label><input type="radio" name="q29" value="d"> d) Walk</label>
+                     </div>
+                </div>
+
+                <div class="question-block" data-question-num="30">
+                     <div class="question-header">
+                         <p><strong class="q-num">30.</strong> I haven't seen my friends ...... I graduated</p>
+                         <button type="button" class="skip-button" data-question-name="q30">Skip</button>
+                    </div>
+                     <div class="options">
+                         <label><input type="radio" name="q30" value="a"> a) for</label>
+                         <label><input type="radio" name="q30" value="b"> b) since</label>
+                         <label><input type="radio" name="q30" value="c"> c) when</label>
+                         <label><input type="radio" name="q30" value="d"> d) but</label>
+                     </div>
+                </div>
+
+                <div class="question-block" data-question-num="31">
+                     <div class="question-header">
+                         <p><strong class="q-num">31.</strong> I would like to learn English ________ improve my speaking.</p>
+                         <button type="button" class="skip-button" data-question-name="q31">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q31" value="a"> a) In order to</label>
+                        <label><input type="radio" name="q31" value="b"> b) because</label>
+                        <label><input type="radio" name="q31" value="c"> c) so that</label>
+                        <label><input type="radio" name="q31" value="d"> d) so</label>
+                    </div>
+                </div>
+
+                <div class="question-block" data-question-num="31b">
+                     <div class="question-header">
+                         <p><strong class="q-num">31b.</strong> I think I should change this sofa. It is very big and it ........... too much space.</p>
+                         <button type="button" class="skip-button" data-question-name="q31b">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q31b" value="a"> a) takes up</label>
+                        <label><input type="radio" name="q31b" value="b"> b) takes over</label>
+                        <label><input type="radio" name="q31b" value="c"> c) turns down</label>
+                        <label><input type="radio" name="q31b" value="d"> d) gives up</label>
+                    </div>
+                </div>
+
+                <div class="question-block" data-question-num="32">
+                     <div class="question-header">
+                         <p><strong class="q-num">32.</strong> Movies which tell stories about the future, outer space, robots, or aliens. Are called ________</p>
+                         <button type="button" class="skip-button" data-question-name="q32">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q32" value="a"> a) Science fiction</label>
+                        <label><input type="radio" name="q32" value="b"> b) Biopic</label>
+                        <label><input type="radio" name="q32" value="c"> c) Cartoon</label>
+                        <label><input type="radio" name="q32" value="d"> d) horror</label>
+                    </div>
+                </div>
+
+                <div class="question-block" data-question-num="33">
+                     <div class="question-header">
+                         <p><strong class="q-num">33.</strong> The book ________ you lent me, was fascinating.</p>
+                         <button type="button" class="skip-button" data-question-name="q33">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q33" value="a"> a) that</label>
+                        <label><input type="radio" name="q33" value="b"> b) who</label>
+                        <label><input type="radio" name="q33" value="c"> c) which</label>
+                        <label><input type="radio" name="q33" value="d"> d) whose</label>
+                    </div>
+                </div>
+
+                <div class="question-block" data-question-num="34">
+                     <div class="question-header">
+                         <p><strong class="q-num">34.</strong> The concert was ________ than I expected.</p>
+                         <button type="button" class="skip-button" data-question-name="q34">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q34" value="a"> a) better</label>
+                        <label><input type="radio" name="q34" value="b"> b) good</label>
+                        <label><input type="radio" name="q34" value="c"> c) more good</label>
+                        <label><input type="radio" name="q34" value="d"> d) more excited</label>
+                    </div>
+                </div>
+
+                <div class="question-block" data-question-num="35">
+                     <div class="question-header">
+                         <p><strong class="q-num">35.</strong> After studying for hours, she felt ________</p>
+                         <button type="button" class="skip-button" data-question-name="q35">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q35" value="a"> a) tired</label>
+                        <label><input type="radio" name="q35" value="b"> b) interested</label>
+                        <label><input type="radio" name="q35" value="c"> c) exciting</label>
+                        <label><input type="radio" name="q35" value="d"> d) nervous</label>
+                    </div>
+                </div>
+
+                <div class="question-block" data-question-num="36">
+                     <div class="question-header">
+                         <p><strong class="q-num">36.</strong> What do you call a vehicle with two wheels that you ride by pushing pedals?</p>
+                         <button type="button" class="skip-button" data-question-name="q36">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q36" value="a"> a) bike</label>
+                        <label><input type="radio" name="q36" value="b"> b) boat</label>
+                        <label><input type="radio" name="q36" value="c"> c) airplane</label>
+                        <label><input type="radio" name="q36" value="d"> d) unicycle</label>
+                    </div>
+                </div>
+
+                <div class="question-block" data-question-num="37">
+                     <div class="question-header">
+                         <p><strong class="q-num">37.</strong> The report ________ yesterday.</p>
+                         <button type="button" class="skip-button" data-question-name="q37">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q37" value="a"> a) was written</label>
+                        <label><input type="radio" name="q37" value="b"> b) writes</label>
+                        <label><input type="radio" name="q37" value="c"> c) is writing</label>
+                        <label><input type="radio" name="q37" value="d"> d) wrote</label>
+                    </div>
+                </div>
+
+                 <div class="question-block" data-question-num="38">
+                     <div class="question-header">
+                         <p><strong class="q-num">38.</strong> I ________ my homework yet.</p>
+                         <button type="button" class="skip-button" data-question-name="q38">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q38" value="a"> a) do</label>
+                        <label><input type="radio" name="q38" value="b"> b) does</label>
+                        <label><input type="radio" name="q38" value="c"> c) did</label>
+                        <label><input type="radio" name="q38" value="d"> d) haven't done</label>
+                    </div>
+                </div>
+
+                 <div class="question-block" data-question-num="39">
+                     <div class="question-header">
+                         <p><strong class="q-num">39.</strong> She promised ________ me later.</p>
+                         <button type="button" class="skip-button" data-question-name="q39">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q39" value="a"> a) call</label>
+                        <label><input type="radio" name="q39" value="b"> b) calling</label>
+                        <label><input type="radio" name="q39" value="c"> c) to call</label>
+                        <label><input type="radio" name="q39" value="d"> d) to be called</label>
+                    </div>
+                </div>
+
+                 <div class="question-block" data-question-num="40">
+                     <div class="question-header">
+                         <p><strong class="q-num">40.</strong> The road ________ outside my house now.</p>
+                         <button type="button" class="skip-button" data-question-name="q40">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q40" value="a"> a) is repairing</label>
+                        <label><input type="radio" name="q40" value="b"> b) repairs</label>
+                        <label><input type="radio" name="q40" value="c"> c) is being repaired</label>
+                        <label><input type="radio" name="q40" value="d"> d) repairing</label>
+                    </div>
+                </div>
+
+                <div class="question-block" data-question-num="41">
+                     <div class="question-header">
+                         <p><strong class="q-num">41.</strong> The winner ________ tomorrow.</p>
+                         <button type="button" class="skip-button" data-question-name="q41">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q41" value="a"> a) will be announced</label>
+                        <label><input type="radio" name="q41" value="b"> b) announces</label>
+                        <label><input type="radio" name="q41" value="c"> c) is announcing</label>
+                        <label><input type="radio" name="q41" value="d"> d) announced</label>
+                    </div>
+                </div>
+
+                <div class="question-block" data-question-num="42">
+                     <div class="question-header">
+                         <p><strong class="q-num">42.</strong> The house ________ already.</p>
+                         <button type="button" class="skip-button" data-question-name="q42">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q42" value="a"> a) has cleaned</label>
+                        <label><input type="radio" name="q42" value="b"> b) cleaned</label>
+                        <label><input type="radio" name="q42" value="c"> c) has been cleaned</label>
+                        <label><input type="radio" name="q42" value="d"> d) cleans</label>
+                    </div>
+                </div>
+
+                <div class="question-block" data-question-num="43">
+                     <div class="question-header">
+                         <p><strong class="q-num">43.</strong> "I'm going to visit my grandmother next weekend," Tom said that ________.</p>
+                         <button type="button" class="skip-button" data-question-name="q43">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q43" value="a"> a) he will visit his grandmother next weekend.</label>
+                        <label><input type="radio" name="q43" value="b"> b) he is going to visit his grandmother next weekend.</label>
+                        <label><input type="radio" name="q43" value="c"> c) he was going to visit his grandmother the following weekend.</label>
+                        <label><input type="radio" name="q43" value="d"> d) he was going to visit his grandmother next weekend.</label>
+                    </div>
+                </div>
+
+                <div class="question-block" data-question-num="44">
+                     <div class="question-header">
+                         <p><strong class="q-num">44.</strong> While I ________ home, I saw a shooting star.</p>
+                         <button type="button" class="skip-button" data-question-name="q44">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q44" value="a"> a) was walking</label>
+                        <label><input type="radio" name="q44" value="b"> b) walk</label>
+                        <label><input type="radio" name="q44" value="c"> c) walked</label>
+                        <label><input type="radio" name="q44" value="d"> d) have walked</label>
+                    </div>
+                </div>
+
+                <div class="question-block" data-question-num="45">
+                     <div class="question-header">
+                         <p><strong class="q-num">45.</strong> Alternative word for: “escape”?</p>
+                         <button type="button" class="skip-button" data-question-name="q45">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q45" value="a"> a) get away</label>
+                        <label><input type="radio" name="q45" value="b"> b) run away</label>
+                        <label><input type="radio" name="q45" value="c"> c) run out</label>
+                        <label><input type="radio" name="q45" value="d"> d) a and b</label>
+                    </div>
+                </div>
+
+                <div class="question-block" data-question-num="46">
+                     <div class="question-header">
+                         <p><strong class="q-num">46.</strong> Which of the following adjectives is used to describe a person who has problems making a decision?</p>
+                         <button type="button" class="skip-button" data-question-name="q46">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q46" value="a"> a) competitive</label>
+                        <label><input type="radio" name="q46" value="b"> b) a good leader</label>
+                        <label><input type="radio" name="q46" value="c"> c) indecisive</label>
+                        <label><input type="radio" name="q46" value="d"> d) risk taker</label>
+                    </div>
+                </div>
+
+                <div class="question-block" data-question-num="47">
+                     <div class="question-header">
+                         <p><strong class="q-num">47.</strong> When I was young, I ________ live in Canada.</p>
+                         <button type="button" class="skip-button" data-question-name="q47">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q47" value="a"> a) used to</label>
+                        <label><input type="radio" name="q47" value="b"> b) use to</label>
+                        <label><input type="radio" name="q47" value="c"> c) was used</label>
+                        <label><input type="radio" name="q47" value="d"> d) would</label>
+                    </div>
+                </div>
+
+                <div class="question-block" data-question-num="48">
+                     <div class="question-header">
+                         <p><strong class="q-num">48.</strong> If it ________ tomorrow, we will stay indoors.</p>
+                         <button type="button" class="skip-button" data-question-name="q48">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q48" value="a"> a) rains</label>
+                        <label><input type="radio" name="q48" value="b"> b) will rain</label>
+                        <label><input type="radio" name="q48" value="c"> c) rained</label>
+                        <label><input type="radio" name="q48" value="d"> d) would rain</label>
+                    </div>
+                </div>
+
+                <div class="question-block" data-question-num="49">
+                     <div class="question-header">
+                         <p><strong class="q-num">49.</strong> If I ________ about the party, I would have gone.</p>
+                         <button type="button" class="skip-button" data-question-name="q49">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q49" value="a"> a) know</label>
+                        <label><input type="radio" name="q49" value="b"> b) had known</label>
+                        <label><input type="radio" name="q49" value="c"> c) knew</label>
+                        <label><input type="radio" name="q49" value="d"> d) knows</label>
+                    </div>
+                </div>
+
+                <div class="question-block" data-question-num="50">
+                     <div class="question-header">
+                         <p><strong class="q-num">50.</strong> Which of the following multi-word verbs means “to wear clothes to see if you want to buy them"?</p>
+                         <button type="button" class="skip-button" data-question-name="q50">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q50" value="a"> a) Dress down</label>
+                        <label><input type="radio" name="q50" value="b"> b) Dress up</label>
+                        <label><input type="radio" name="q50" value="c"> c) Wear</label>
+                        <label><input type="radio" name="q50" value="d"> d) Try on</label>
+                    </div>
+                </div>
+
+                <div class="question-block" data-question-num="51">
+                     <div class="question-header">
+                         <p><strong class="q-num">51.</strong> The girl ________ I met yesterday is a talented artist.</p>
+                         <button type="button" class="skip-button" data-question-name="q51">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q51" value="a"> a) which</label>
+                        <label><input type="radio" name="q51" value="b"> b) whom</label>
+                        <label><input type="radio" name="q51" value="c"> c) whose</label>
+                        <label><input type="radio" name="q51" value="d"> d) who</label>
+                    </div>
+                </div>
+
+                <div class="question-block" data-question-num="52">
+                     <div class="question-header">
+                         <p><strong class="q-num">52.</strong> The house ________ I grew up was demolished last year.</p>
+                         <button type="button" class="skip-button" data-question-name="q52">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q52" value="a"> a) which</label>
+                        <label><input type="radio" name="q52" value="b"> b) where</label>
+                        <label><input type="radio" name="q52" value="c"> c) who</label>
+                        <label><input type="radio" name="q52" value="d"> d) whose</label>
+                    </div>
+                </div>
+
+                <div class="question-block" data-question-num="53">
+                     <div class="question-header">
+                         <p><strong class="q-num">53.</strong> The car ________ owner is my friend needs to be repaired.</p>
+                         <button type="button" class="skip-button" data-question-name="q53">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q53" value="a"> a) who</label>
+                        <label><input type="radio" name="q53" value="b"> b) which</label>
+                        <label><input type="radio" name="q53" value="c"> c) that</label>
+                        <label><input type="radio" name="q53" value="d"> d) whose</label>
+                    </div>
+                </div>
+
+                <div class="question-block" data-question-num="54">
+                     <div class="question-header">
+                         <p><strong class="q-num">54.</strong> The new bridge ________ next month.</p>
+                         <button type="button" class="skip-button" data-question-name="q54">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q54" value="a"> a) will build</label>
+                        <label><input type="radio" name="q54" value="b"> b) is building</label>
+                        <label><input type="radio" name="q54" value="c"> c) will be built</label>
+                        <label><input type="radio" name="q54" value="d"> d) builds</label>
+                    </div>
+                </div>
+
+                 <div class="question-block" data-question-num="55">
+                     <div class="question-header">
+                         <p><strong class="q-num">55.</strong> "Did you enjoy the concert?" she asked if ________.</p>
+                         <button type="button" class="skip-button" data-question-name="q55">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q55" value="a"> a) I enjoyed the concert.</label>
+                        <label><input type="radio" name="q55" value="b"> b) did I enjoy the concert.</label>
+                        <label><input type="radio" name="q55" value="c"> c) had I enjoyed the concert.</label>
+                        <label><input type="radio" name="q55" value="d"> d) I had enjoyed the concert.</label>
+                    </div>
+                </div>
+
+                <div class="question-block" data-question-num="56">
+                     <div class="question-header">
+                         <p><strong class="q-num">56.</strong> "We have been waiting for hours," they complained that ________.</p>
+                         <button type="button" class="skip-button" data-question-name="q56">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q56" value="a"> a) they have been waiting for hours.</label>
+                        <label><input type="radio" name="q56" value="b"> b) they had been waiting for hours.</label>
+                        <label><input type="radio" name="q56" value="c"> c) they are waiting for hours.</label>
+                        <label><input type="radio" name="q56" value="d"> d) they were waiting for hours.</label>
+                    </div>
+                </div>
+
+                <div class="question-block" data-question-num="57">
+                     <div class="question-header">
+                         <p><strong class="q-num">57.</strong> She ________ in Paris for three years before moving to London.</p>
+                         <button type="button" class="skip-button" data-question-name="q57">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q57" value="a"> a) lived</label>
+                        <label><input type="radio" name="q57" value="b"> b) has lived</label>
+                        <label><input type="radio" name="q57" value="c"> c) was living</label>
+                        <label><input type="radio" name="q57" value="d"> d) had lived</label>
+                    </div>
+                </div>
+
+                <div class="question-block" data-question-num="58">
+                     <div class="question-header">
+                         <p><strong class="q-num">58.</strong> By the time I got to the party, everyone ________.</p>
+                         <button type="button" class="skip-button" data-question-name="q58">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q58" value="a"> a) leaves</label>
+                        <label><input type="radio" name="q58" value="b"> b) had left</label>
+                        <label><input type="radio" name="q58" value="c"> c) leave</label>
+                        <label><input type="radio" name="q58" value="d"> d) left</label>
+                    </div>
+                </div>
+
+                <div class="question-block" data-question-num="59">
+                     <div class="question-header">
+                         <p><strong class="q-num">59.</strong> What is the meaning of the word "disgusting"?</p>
+                         <button type="button" class="skip-button" data-question-name="q59">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q59" value="a"> a) Attractive</label>
+                        <label><input type="radio" name="q59" value="b"> b) Enjoyable</label>
+                        <label><input type="radio" name="q59" value="c"> c) Nauseating</label>
+                        <label><input type="radio" name="q59" value="d"> d) Delicious</label>
+                    </div>
+                </div>
+
+                <div class="question-block" data-question-num="60">
+                     <div class="question-header">
+                         <p><strong class="q-num">60.</strong> She ________ English for years, but she still struggles.</p>
+                         <button type="button" class="skip-button" data-question-name="q60">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q60" value="a"> a) learns</label>
+                        <label><input type="radio" name="q60" value="b"> b) has been learning</label>
+                        <label><input type="radio" name="q60" value="c"> c) learnt</label>
+                        <label><input type="radio" name="q60" value="d"> d) was learning</label>
+                    </div>
+                </div>
+
+                <div class="question-block" data-question-num="61">
+                     <div class="question-header">
+                         <p><strong class="q-num">61.</strong> Danyela ________ all morning.</p>
+                         <button type="button" class="skip-button" data-question-name="q61">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q61" value="a"> a) has been gardening</label>
+                        <label><input type="radio" name="q61" value="b"> b) has gardened</label>
+                        <label><input type="radio" name="q61" value="c"> c) has been gardened</label>
+                        <label><input type="radio" name="q61" value="d"> d) has gardening</label>
+                    </div>
+                </div>
+
+                <div class="question-block" data-question-num="62">
+                     <div class="question-header">
+                         <p><strong class="q-num">62.</strong> By this time next year, I ________ my degree.</p>
+                         <button type="button" class="skip-button" data-question-name="q62">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q62" value="a"> a) will have finished</label>
+                        <label><input type="radio" name="q62" value="b"> b) will finish</label>
+                        <label><input type="radio" name="q62" value="c"> c) will be finishing</label>
+                        <label><input type="radio" name="q62" value="d"> d) will have been finished</label>
+                    </div>
+                </div>
+
+                <div class="question-block" data-question-num="63">
+                     <div class="question-header">
+                         <p><strong class="q-num">63.</strong> By next Monday, she ________ all the documents.</p>
+                         <button type="button" class="skip-button" data-question-name="q63">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q63" value="a"> a) will have prepared</label>
+                        <label><input type="radio" name="q63" value="b"> b) will prepare</label>
+                        <label><input type="radio" name="q63" value="c"> c) will be preparing</label>
+                        <label><input type="radio" name="q63" value="d"> d) will have been prepared</label>
+                    </div>
+                </div>
+
+                <div class="question-block" data-question-num="64">
+                     <div class="question-header">
+                         <p><strong class="q-num">64.</strong> She would have been here on time if she ________ the traffic jam.</p>
+                         <button type="button" class="skip-button" data-question-name="q64">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q64" value="a"> a) had avoided</label>
+                        <label><input type="radio" name="q64" value="b"> b) would avoid</label>
+                        <label><input type="radio" name="q64" value="c"> c) avoided</label>
+                        <label><input type="radio" name="q64" value="d"> d) was avoiding</label>
+                    </div>
+                </div>
+
+                <div class="question-block" data-question-num="65">
+                     <div class="question-header">
+                         <p><strong class="q-num">65.</strong> My family ________ producing cheese on our ranch traditionally for years, and ________ technology has advanced, this technique is still the most useful and scientifically-supported.</p>
+                         <button type="button" class="skip-button" data-question-name="q65">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q65" value="a"> a) is/despite</label>
+                        <label><input type="radio" name="q65" value="b"> b) has been/ although</label>
+                        <label><input type="radio" name="q65" value="c"> c) had been/ however</label>
+                        <label><input type="radio" name="q65" value="d"> d) are/ although</label>
+                    </div>
+                </div>
+
+                <div class="question-block" data-question-num="66">
+                     <div class="question-header">
+                         <p><strong class="q-num">66.</strong> A university degree, according to some, should help graduates ________ better employment.</p>
+                         <button type="button" class="skip-button" data-question-name="q66">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q66" value="a"> a) take</label>
+                        <label><input type="radio" name="q66" value="b"> b) comprehend</label>
+                        <label><input type="radio" name="q66" value="c"> c) land</label>
+                        <label><input type="radio" name="q66" value="d"> d) find</label>
+                    </div>
+                </div>
+
+                <div class="question-block" data-question-num="67">
+                     <div class="question-header">
+                         <p><strong class="q-num">67.</strong> Ivy League universities such as Harvard, Oxford and Cambridge have the best professors in the world, and they hold seminars for the public good while integrating science ________ innovations and discoveries ________ the lives of people</p>
+                         <button type="button" class="skip-button" data-question-name="q67">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q67" value="a"> a) in/ using</label>
+                        <label><input type="radio" name="q67" value="b"> b) into/through</label>
+                        <label><input type="radio" name="q67" value="c"> c) from/ beside</label>
+                        <label><input type="radio" name="q67" value="d"> d) into/ upon</label>
+                    </div>
+                </div>
+
+                <div class="question-block" data-question-num="68">
+                     <div class="question-header">
+                         <p><strong class="q-num">68.</strong> I shall never forget ________ the queen in her white dress.</p>
+                         <button type="button" class="skip-button" data-question-name="q68">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q68" value="a"> a) to see</label>
+                        <label><input type="radio" name="q68" value="b"> b) to be seen</label>
+                        <label><input type="radio" name="q68" value="c"> c) seeing</label>
+                        <label><input type="radio" name="q68" value="d"> d) to seeing</label>
+                    </div>
+                </div>
+
+                <div class="question-block" data-question-num="69">
+                     <div class="question-header">
+                         <p><strong class="q-num">69.</strong> lights are off, they ________ the house</p>
+                         <button type="button" class="skip-button" data-question-name="q69">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q69" value="a"> a) must have left</label>
+                        <label><input type="radio" name="q69" value="b"> b) couldn't have left</label>
+                        <label><input type="radio" name="q69" value="c"> c) must have leaved</label>
+                        <label><input type="radio" name="q69" value="d"> d) could have leaved</label>
+                    </div>
+                </div>
+
+                <div class="question-block" data-question-num="70">
+                      <div class="question-header">
+                         <p><strong class="q-num">70.</strong> I regret ________ you that your application has been rejected by the CEO of the company.</p>
+                         <button type="button" class="skip-button" data-question-name="q70">Skip</button>
+                    </div>
+                     <div class="options">
+                         <label><input type="radio" name="q70" value="a"> a) informing</label>
+                         <label><input type="radio" name="q70" value="b"> b) telling</label>
+                         <label><input type="radio" name="q70" value="c"> c) te tell</label>
+                         <label><input type="radio" name="q70" value="d"> d) to inform</label>
+                     </div>
+                </div>
+
+                <div class="question-block" data-question-num="71">
+                      <div class="question-header">
+                         <p><strong class="q-num">71.</strong> Traditional cultures will ultimately disappear ________ technology develops.</p>
+                         <button type="button" class="skip-button" data-question-name="q71">Skip</button>
+                    </div>
+                     <div class="options">
+                         <label><input type="radio" name="q71" value="a"> a) as</label>
+                         <label><input type="radio" name="q71" value="b"> b) like</label>
+                         <label><input type="radio" name="q71" value="c"> c) albeit</label>
+                         <label><input type="radio" name="q71" value="d"> d) despite</label>
+                     </div>
+                </div>
+
+                <div class="question-block" data-question-num="72">
+                      <div class="question-header">
+                         <p><strong class="q-num">72.</strong> On the heels of the announcement of Queen Elizabeth's obituary, Commonwealth countries flew their flags at half must to show their grief and respect.</p>
+                         <button type="button" class="skip-button" data-question-name="q72">Skip</button>
+                    </div>
+                     <div class="options">
+                         <label><input type="radio" name="q72" value="a"> a) Far behind</label>
+                         <label><input type="radio" name="q72" value="b"> b) Following closely</label>
+                         <label><input type="radio" name="q72" value="c"> c) Ahead</label>
+                         <label><input type="radio" name="q72" value="d"> d) Before</label>
+                     </div>
+                </div>
+
+                <div class="question-block" data-question-num="73">
+                      <div class="question-header">
+                         <p><strong class="q-num">73.</strong> After a minute of silence, all people zeroed in on the words coming out of the next of kin's mouth. the synonym for the word in bold is:</p>
+                         <button type="button" class="skip-button" data-question-name="q73">Skip</button>
+                    </div>
+                     <div class="options">
+                         <label><input type="radio" name="q73" value="a"> a) focus</label>
+                         <label><input type="radio" name="q73" value="b"> b) skirt</label>
+                         <label><input type="radio" name="q73" value="c"> c) circumvent</label>
+                         <label><input type="radio" name="q73" value="d"> d) lag</label>
+                     </div>
+                </div>
+
+                <div class="question-block" data-question-num="74">
+                      <div class="question-header">
+                         <p><strong class="q-num">74.</strong> What is a synonym for the word “Voracious"?</p>
+                         <button type="button" class="skip-button" data-question-name="q74">Skip</button>
+                    </div>
+                     <div class="options">
+                         <label><input type="radio" name="q74" value="a"> a) Indifferent</label>
+                         <label><input type="radio" name="q74" value="b"> b) Insatiable</label>
+                         <label><input type="radio" name="q74" value="c"> c) Satisfied</label>
+                         <label><input type="radio" name="q74" value="d"> d) Content</label>
+                     </div>
+                </div>
+
+                <div class="question-block" data-question-num="75">
+                      <div class="question-header">
+                         <p><strong class="q-num">75.</strong> What is an antonym for the word “Pernicious"?</p>
+                         <button type="button" class="skip-button" data-question-name="q75">Skip</button>
+                    </div>
+                     <div class="options">
+                         <label><input type="radio" name="q75" value="a"> a) Beneficial</label>
+                         <label><input type="radio" name="q75" value="b"> b) Harmful</label>
+                         <label><input type="radio" name="q75" value="c"> c) Unpleasant</label>
+                         <label><input type="radio" name="q75" value="d"> d) Neutral</label>
+                     </div>
+                </div>
+
+                <div class="question-block" data-question-num="76">
+                      <div class="question-header">
+                         <p><strong class="q-num">76.</strong> Mandatory practices like donning masks in public areas or being vaccinated to have the right to enter public places caused a big dilemma in certain parts of society during COVID-19.</p>
+                         <button type="button" class="skip-button" data-question-name="q76">Skip</button>
+                    </div>
+                     <div class="options">
+                         <label><input type="radio" name="q76" value="a"> a) Discretionary</label>
+                         <label><input type="radio" name="q76" value="b"> b) Dispensable</label>
+                         <label><input type="radio" name="q76" value="c"> c) Voluntary</label>
+                         <label><input type="radio" name="q76" value="d"> d) Compulsory</label>
+                     </div>
+                </div>
+
+                <div class="question-block" data-question-num="77">
+                      <div class="question-header">
+                         <p><strong class="q-num">77.</strong> The company had to cut ________ on expenses due to financial difficulties.</p>
+                         <button type="button" class="skip-button" data-question-name="q77">Skip</button>
+                    </div>
+                     <div class="options">
+                         <label><input type="radio" name="q77" value="a"> a) off</label>
+                         <label><input type="radio" name="q77" value="b"> b) back</label>
+                         <label><input type="radio" name="q77" value="c"> c) up</label>
+                         <label><input type="radio" name="q77" value="d"> d) down</label>
+                     </div>
+                </div>
+
+                <div class="question-block" data-question-num="78">
+                      <div class="question-header">
+                         <p><strong class="q-num">78.</strong> She put ________ with her difficult boss for years before finally resigning.</p>
+                         <button type="button" class="skip-button" data-question-name="q78">Skip</button>
+                    </div>
+                     <div class="options">
+                         <label><input type="radio" name="q78" value="a"> a) up</label>
+                         <label><input type="radio" name="q78" value="b"> b) in</label>
+                         <label><input type="radio" name="q78" value="c"> c) out</label>
+                         <label><input type="radio" name="q78" value="d"> d) off</label>
+                     </div>
+                </div>
+
+                <div class="question-block" data-question-num="79">
+                      <div class="question-header">
+                         <p><strong class="q-num">79.</strong> We need to get ________ with our work if we want to meet the deadline.</p>
+                         <button type="button" class="skip-button" data-question-name="q79">Skip</button>
+                    </div>
+                     <div class="options">
+                         <label><input type="radio" name="q79" value="a"> a) over</label>
+                         <label><input type="radio" name="q79" value="b"> b) on</label>
+                         <label><input type="radio" name="q79" value="c"> c) up</label>
+                         <label><input type="radio" name="q79" value="d"> d) through</label>
+                     </div>
+                </div>
+
+                <div class="question-block" data-question-num="80">
+                      <div class="question-header">
+                         <p><strong class="q-num">80.</strong> The teacher asked the students to hand ________ their assignments by Friday.</p>
+                         <button type="button" class="skip-button" data-question-name="q80">Skip</button>
+                    </div>
+                     <div class="options">
+                         <label><input type="radio" name="q80" value="a"> a) in</label>
+                         <label><input type="radio" name="q80" value="b"> b) on</label>
+                         <label><input type="radio" name="q80" value="c"> c) out</label>
+                         <label><input type="radio" name="q80" value="d"> d) up</label>
+                     </div>
+                </div>
+
+                <div class="question-block" data-question-num="81">
+                      <div class="question-header">
+                         <p><strong class="q-num">81.</strong> If only I ________ more time to travel.</p>
+                         <button type="button" class="skip-button" data-question-name="q81">Skip</button>
+                    </div>
+                     <div class="options">
+                         <label><input type="radio" name="q81" value="a"> a) have</label>
+                         <label><input type="radio" name="q81" value="b"> b) had</label>
+                         <label><input type="radio" name="q81" value="c"> c) will have</label>
+                         <label><input type="radio" name="q81" value="d"> d) having</label>
+                     </div>
+                </div>
+
+                <div class="question-block" data-question-num="82">
+                      <div class="question-header">
+                         <p><strong class="q-num">82.</strong> He wishes he'd ________ the opportunity to study abroad when he was younger.</p>
+                         <button type="button" class="skip-button" data-question-name="q82">Skip</button>
+                    </div>
+                     <div class="options">
+                         <label><input type="radio" name="q82" value="a"> a) has</label>
+                         <label><input type="radio" name="q82" value="b"> b) had</label>
+                         <label><input type="radio" name="q82" value="c"> c) have</label>
+                         <label><input type="radio" name="q82" value="d"> d) will have</label>
+                     </div>
+                </div>
+
+                <div class="question-block" data-question-num="83">
+                      <div class="question-header">
+                         <p><strong class="q-num">83.</strong> It's time to face the music and ________ the consequences of your actions.</p>
+                         <button type="button" class="skip-button" data-question-name="q83">Skip</button>
+                    </div>
+                     <div class="options">
+                         <label><input type="radio" name="q83" value="a"> a) pay the piper</label>
+                         <label><input type="radio" name="q83" value="b"> b) beat around the bush</label>
+                         <label><input type="radio" name="q83" value="c"> c) bite the bullet</label>
+                         <label><input type="radio" name="q83" value="d"> d) let the cat out of the bag</label>
+                     </div>
+                </div>
+
+                <div class="question-block" data-question-num="84">
+                      <div class="question-header">
+                         <p><strong class="q-num">84.</strong> She's always on cloud nine whenever she gets to visit her grandparents. She loves them ________.</p>
+                         <button type="button" class="skip-button" data-question-name="q84">Skip</button>
+                    </div>
+                     <div class="options">
+                         <label><input type="radio" name="q84" value="a"> a) with all her heart</label>
+                         <label><input type="radio" name="q84" value="b"> b) at the drop of a hat</label>
+                         <label><input type="radio" name="q84" value="c"> c) for a song</label>
+                         <label><input type="radio" name="q84" value="d"> d) until the cows come home</label>
+                     </div>
+                </div>
+
+                <div class="question-block" data-question-num="85">
+                      <div class="question-header">
+                         <p><strong class="q-num">85.</strong> Don't count your chickens before they hatch, meaning don't ________.</p>
+                         <button type="button" class="skip-button" data-question-name="q85">Skip</button>
+                    </div>
+                     <div class="options">
+                         <label><input type="radio" name="q85" value="a"> a) spend money before you have it</label>
+                         <label><input type="radio" name="q85" value="b"> b) underestimate the situation</label>
+                         <label><input type="radio" name="q85" value="c"> c) expect success before it happens</label>
+                         <label><input type="radio" name="q85" value="d"> d) ignore the facts</label>
+                     </div>
+                </div>
+
+                <div class="question-block" data-question-num="86">
+                      <div class="question-header">
+                         <p><strong class="q-num">86.</strong> His success didn't come overnight; he had to ________ and persevere through many challenges.</p>
+                         <button type="button" class="skip-button" data-question-name="q86">Skip</button>
+                    </div>
+                     <div class="options">
+                         <label><input type="radio" name="q86" value="a"> a) burn the midnight oil</label>
+                         <label><input type="radio" name="q86" value="b"> b) hit the nail on the head</label>
+                         <label><input type="radio" name="q86" value="c"> c) jump on the bandwagon</label>
+                         <label><input type="radio" name="q86" value="d"> d) cry over spilled milk</label>
+                     </div>
+                </div>
+
+                <div class="question-block" data-question-num="87">
+                     <div class="question-header">
+                         <p><strong class="q-num">87.</strong> A vast majority of customers with high awareness do not opt for purchasing products produced in sweatshops due to the dire conditions of the workers.</p>
+                         <button type="button" class="skip-button" data-question-name="q87">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q87" value="a"> a) Mild</label>
+                        <label><input type="radio" name="q87" value="b"> b) Encouraging</label>
+                        <label><input type="radio" name="q87" value="c"> c) Terrible</label>
+                        <label><input type="radio" name="q87" value="d"> d) Good</label>
+                    </div>
+                </div>
+
+                <div class="question-block" data-question-num="88">
+                      <div class="question-header">
+                         <p><strong class="q-num">88.</strong> Scientifically supported methods and his theory have gained seminal role, given that he constantly paved the way for positive outcomes.</p>
+                         <button type="button" class="skip-button" data-question-name="q88">Skip</button>
+                    </div>
+                     <div class="options">
+                         <label><input type="radio" name="q88" value="a"> a) Groundbreaking</label>
+                         <label><input type="radio" name="q88" value="b"> b) Negligible</label>
+                         <label><input type="radio" name="q88" value="c"> c) Barren</label>
+                         <label><input type="radio" name="q88" value="d"> d) Trifling</label>
+                     </div>
+                </div>
+
+                <div class="question-block" data-question-num="89">
+                      <div class="question-header">
+                         <p><strong class="q-num">89.</strong> The phrase "cast aspersions" implies:</p>
+                         <button type="button" class="skip-button" data-question-name="q89">Skip</button>
+                    </div>
+                     <div class="options">
+                         <label><input type="radio" name="q89" value="a"> a) To express doubts or suspicions</label>
+                         <label><input type="radio" name="q89" value="b"> b) To offer enthusiastic praise</label>
+                         <label><input type="radio" name="q89" value="c"> c) provide a detailed explanation</label>
+                         <label><input type="radio" name="q89" value="d"> d) To remain completely silent</label>
+                     </div>
+                </div>
+
+                <div class="question-block" data-question-num="90">
+                    <div class="question-header">
+                         <p><strong class="q-num">90.</strong> The burgeoning field of artificial intelligence necessitates:</p>
+                         <button type="button" class="skip-button" data-question-name="q90">Skip</button>
+                    </div>
+                    <div class="options">
+                        <label><input type="radio" name="q90" value="a"> a) A rigid adherence to established protocols</label>
+                        <label><input type="radio" name="q90" value="b"> b) A willingness to embrace novel approaches</label>
+                        <label><input type="radio" name="q90" value="c"> c) An overreliance on human intuition</label>
+                        <label><input type="radio" name="q90" value="d"> d) A complete disregard for ethical considerations</label>
+                   </div>
+               </div>
+
+                <!-- ========= Questions End Here ========= -->
+            </div>
+
+            <div class="submission-area">
+                 <button type="submit" id="submitButton">Submit Test</button>
+                 <p id="submissionStatus" class="status-message"></p>
+            </div>
+        </form>
+
+        <div id="results" class="card results-card" style="display: none;">
+             <h2>Test Results</h2>
+             <div id="results-content">
+                <!-- Results will be displayed here -->
+             </div>
+        </div>
+    </div> <!-- end .container -->
+
+    <script src="script.js"></script>
+</body>
+</html>
